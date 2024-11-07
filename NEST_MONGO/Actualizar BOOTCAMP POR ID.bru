@@ -1,0 +1,21 @@
+meta {
+  name: Actualizar BOOTCAMP POR ID
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:3000/Bootcamps/672cdf92a0e6b6a3b4dcb396
+  body: json
+  auth: none
+}
+
+headers {
+  ~Content- Type: application/json
+}
+
+body:json {
+  {
+    "averageRating": 5
+  }
+}

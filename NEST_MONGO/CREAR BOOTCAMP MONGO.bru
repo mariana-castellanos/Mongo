@@ -1,0 +1,25 @@
+meta {
+  name: CREAR BOOTCAMP MONGO
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/bootcamps
+  body: json
+  auth: none
+}
+
+headers {
+  Contect-Type: application/json
+}
+
+body:json {
+  {
+    "name": "JHGH855",
+    "phone": 1213243,
+    "address": "calle 32",
+    "averageRating": -11,
+    "createdAt": "2020-11-12"
+  }
+}
